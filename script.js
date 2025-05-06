@@ -10,30 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Переключение темы (светлая/темная)
-    const themeSwitch = document.getElementById('theme-switch');
-    const body = document.body;
-    
-    // Проверяем сохраненную тему в localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        body.className = savedTheme;
-    }
-    
-    if (themeSwitch) {
-        themeSwitch.addEventListener('click', function() {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-                localStorage.setItem('theme', 'light-mode');
-            } else {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark-mode');
-            }
-        });
-    }
-
     // Мобильное меню
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('nav');

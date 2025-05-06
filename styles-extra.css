@@ -16,20 +16,6 @@
     --header-bg: rgba(26, 26, 26, 0.9);
 }
 
-.light-mode {
-    --bg-primary: #f5f5f5;
-    --bg-secondary: #e5e5e5;
-    --text-primary: #333333;
-    --text-secondary: #666666;
-    --accent-color: #808080;
-    --accent-hover: #666666;
-    --card-bg: #ffffff;
-    --card-border: rgba(128, 128, 128, 0.2);
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --input-bg: #f0f0f0;
-    --header-bg: rgba(255, 255, 255, 0.9);
-}
-
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -38,40 +24,6 @@ body {
 
 body::before {
     background: var(--bg-primary);
-}
-
-/* Переключатель темы */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-#theme-switch {
-    background: var(--card-bg);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: var(--accent-color);
-    cursor: pointer;
-    box-shadow: 0 2px 10px var(--shadow-color);
-    transition: all 0.3s ease;
-}
-
-#theme-switch:hover {
-    transform: scale(1.1);
-}
-
-.dark-mode .light-icon,
-.light-mode .dark-icon {
-    display: none;
-}
-
-.dark-mode .dark-icon,
-.light-mode .light-icon {
-    display: inline-block;
 }
 
 /* Прелоадер */
